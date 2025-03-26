@@ -1,20 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import TeacherPage from "./pages/TeacherPage";
-import StudentPage from "./pages/StudentPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import VRVideoPlayer from "./VRVideoPlayer";
+import DigestiveSystem from "./DigestiveSystem"
+
+
+
 
 function App() {
   return (
     <Router>
-      <div className="App">
-
-        
+      <Routes>
+        <Route path="/vr" element={<VRVideoPlayer/>} />
+        <Route path="/ds" element={<DigestiveSystem/>} />
     
-        <Routes>
-          <Route path="/teacher" element={<TeacherPage />} />
-          <Route path="/student" element={<StudentPage />} />
-        </Routes>
-      </div>
+      </Routes>
     </Router>
   );
 }
