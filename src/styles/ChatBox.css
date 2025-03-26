@@ -1,0 +1,49 @@
+.chat-container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-box {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .chat-input-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .send-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .send-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .teacher-msg {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .student-msg {
+    color: green;
+    font-weight: bold;
+  }
+  
